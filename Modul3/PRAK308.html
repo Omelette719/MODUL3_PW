@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Form Pendaftaran Kursus</title>
+   <style>
+      body {
+        border-top-style: inset;
+        border-left-style: inset;
+        border-right-style: solid; 
+        border-bottom-style: solid;
+        border-width: medium;
+        margin-left: 450px;
+        margin-right: 450px;
+      }
+      fieldset {
+        margin: 0;
+        padding: 5px;
+      }
+      h1 {
+        margin: 0;
+        padding: 10;
+      }
+      h2, p {
+        margin: 0;
+      }
+   </style>
+  </head>
+
+  <body>
+    <form name="Pendaftaran_Kursus" method="post" action="url">
+      <fieldset style="background-color: #48b4db;">
+        <h1 style="color: red; font-size: 35px;" align="center">Pendaftaran Kursus</h1>
+        <br>
+      </fieldset>
+
+      <fieldset style="background-color: grey;"> 
+        <table>
+          <tr>
+            <td><h2>Data Diri</h2></td>
+            <td></td>
+          </tr>
+          <tr>
+            <td><label for="username">Nama</label></td>
+            <td><input type="text" name="username" id="username"></td>
+          </tr>
+          <tr>
+            <td><label for="nim">Nim</label></td>
+            <td><input type="text" name="nim" id="nim"></td>
+          </tr>
+          <tr>
+            <td><label for="email">E-mail</label></td>
+            <td><input type="text" name="email" id="email"></td>
+          </tr>
+          <tr>
+            <td><label for="tl">Tanggal Lahir</label></td>
+            <td><input type="date" name="tl" id="tl"></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><label for="kelamin">Jenis Kelamin</label></td>
+            <td>
+              <input type="radio" name="kelamin_L" value="laki-laki"> Laki-laki<br>
+              <input type="radio" name="kelamin_P" value="perempuan"> Perempuan<br>
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top;"><label for="program">Pilih Program Khusus</label></td>
+            <td>
+              <input type="checkbox" name="program_1" value="c"> C#<br>
+              <input type="checkbox" name="program_2" value="j"> Java<br>
+              <input type="checkbox" name="program_3" value="sql"> SQL<br>
+              <input type="checkbox" name="program_4" value="html&php"> HTML dan PHP<br>
+            </td>
+          </tr>
+          <tr>
+            <td><label for="jadwal">Pilihan Hari/Jam Kursus</label></td>
+            <td>
+              <select name="jadwalrawr">
+                <option value="sebu(senin rabu👽)">Senin-Rabu/09.00-11.00</option>
+                <option value="kumat(kamis jum'at🦅💥)">Kamis-Jum'at/16.00-18.00</option>
+                <option value="habur(hari libur😓)">Sabtu-Minggu/08.00-10.00</option>
+              </select>
+            </td>
+          </tr>
+        </table>
+        <br>
+        <br>
+        <br>
+      </fieldset>
+
+      <fieldset style="background-color: #ff707a;">
+        <p>Komentar Anda</p>
+        <textarea name="komen👍" rows="5" cols="60">
+        </textarea>
+        <br>
+        <br>
+        <input type="reset" name="beasa" value="Reset">
+        <input type="submit" name="oke" value="Submit">
+        <input type="button" name="kdjadi" value="Cancel">
+        <br>
+        <br>
+      </fieldset>  
+    </form>
+  </body>
+</html>
